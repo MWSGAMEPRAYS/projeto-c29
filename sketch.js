@@ -120,13 +120,13 @@ function draw() {
   
   imageMode(CENTER);
   
-  image(polygon_img ,polygon.position.x,polygon.position.y,40,40)
+  image(polygon_img ,polygon.position.x, polygon.position.y,40,40)
   
   slingShot.display();
 }
 
 function mouseDragged(){
-  Matter.Body.setPosition(polygon.body, {x: mouseX, y: mouseY});
+  Matter.Body.setPosition(this.polygon, {x: mouseX, y: mouseY});
   }
   
   // function mouseReleased(){ serve para quando soltar o botão direito/esquerdo do mouse, o objeto selecionado ser solto na tela.
