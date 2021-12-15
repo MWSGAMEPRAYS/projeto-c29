@@ -8,7 +8,11 @@ class Slingshot{
              this.pointB=pointB;
               World.add(world, this.sling);
              } 
-             fly(){ this.sling.bodyA =null; }
+             attach(body){
+             this.sling.bodyA=body;
+             }
+             fly()
+             { this.sling.bodyA =null; }
               display(){
                    if(this.sling.bodyA){
                         var pointA = this.sling.bodyA.position;
